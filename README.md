@@ -25,7 +25,7 @@ Ensure you have the following installed:
 
 To run the script, use the following command:
 ```sh
-python main.pytorchrun --nproc_per_node=<NUM_GPUS> <SCRIPT_NAME> \
+torchrun --nproc_per_node=<NUM_GPUS> finetune_whisper.py \
     --model_name <MODEL_NAME> \
     --sampling_rate <SAMPLING_RATE> \
     --num_proc <NUM_PROC> \
