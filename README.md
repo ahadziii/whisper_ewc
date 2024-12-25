@@ -1,6 +1,6 @@
 # Whisper EWC
 
-This project demonstrates the application of Elastic Weight Consolidation (EWC) in the Whisper model to mitigate catastrophic forgetting.
+This project integrates Elastic Weight Consolidation (EWC), a Lifelong Learning technique, in the Whisper model to mitigate catastrophic forgetting.
 
 ## Prerequisites
 
