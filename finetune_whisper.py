@@ -1,4 +1,16 @@
-c
+import torch
+import argparse
+import evaluate
+from dataclasses import dataclass
+from typing import Any, Dict, List, Union
+from datasets import DatasetDict, Audio, load_from_disk, concatenate_datasets
+from transformers.models.whisper.english_normalizer import BasicTextNormalizer
+from transformers import WhisperFeatureExtractor, WhisperTokenizer, WhisperProcessor, WhisperForConditionalGeneration, Seq2SeqTrainingArguments, Seq2SeqTrainer, Trainer
+import torchaudio
+import os
+from collections import defaultdict
+from transformers.modeling_outputs import Seq2SeqLMOutput
+import logging
 
 # Configure logging
 logging.basicConfig(
